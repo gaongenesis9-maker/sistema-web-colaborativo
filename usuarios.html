@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>Usuarios</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<h1>Usuarios</h1>
+
+<ul id="lista"></ul>
+
+<script src="../js/usuarioServicio.js"></script>
+<script>
+    const lista = document.getElementById("lista");
+    obtenerUsuarios().forEach(u => {
+        lista.innerHTML += <li>${u.nombre}</li>;
+    });
+</script>
+
+</body>
+</html>
