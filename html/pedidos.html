@@ -2,20 +2,27 @@
 <html>
 <head>
     <title>Pedidos</title>
+
+    <!-- 🔥 IMPORTANTE: conexión al CSS -->
     <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body>
+
+<div class="panel">
 
 <h1>Pedidos</h1>
 
 <ul id="lista"></ul>
 
+</div>
+
 <script src="../js/pedidoServicio.js"></script>
 <script>
-    const lista = document.getElementById("lista");
-    obtenerPedidos().forEach(p => {
-        lista.innerHTML += `<li>${p.id} - ${p.producto}</li>`;
-    });
+const lista = document.getElementById("lista");
+obtenerPedidos().forEach(p => {
+    lista.innerHTML += `<li>${p.id} - ${p.producto}</li>`;
+});
 </script>
 
 </body>

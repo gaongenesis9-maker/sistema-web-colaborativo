@@ -4,18 +4,23 @@
     <title>Categorías</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body>
+
+<div class="panel">
 
 <h1>Categorías</h1>
 
 <ul id="lista"></ul>
 
+</div>
+
 <script src="../js/categoriaServicio.js"></script>
 <script>
-    const lista = document.getElementById("lista");
-    obtenerCategorias().forEach(c => {
-        lista.innerHTML += `<li>${c.nombre}</li>`;
-    });
+const lista = document.getElementById("lista");
+obtenerCategorias().forEach(c => {
+    lista.innerHTML += `<li>${c.nombre}</li>`;
+});
 </script>
 
 </body>
