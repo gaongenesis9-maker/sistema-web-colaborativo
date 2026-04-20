@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Categorías</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<h1>Categorías</h1>
+
+<ul id="lista"></ul>
+
+<script src="../js/categoriaServicio.js"></script>
+<script>
+    const lista = document.getElementById("lista");
+    obtenerCategorias().forEach(c => {
+        lista.innerHTML += `<li>${c.nombre}</li>`;
+    });
+</script>
+
+</body>
+</html>

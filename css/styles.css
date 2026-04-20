@@ -1,0 +1,32 @@
+/* ============================
+   ESTILOS GENERALES (SEGUROS)
+   ============================ */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    /* Fondo degradado morado */
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+
+    color: white;
+    text-align: center;
+}
+
+/* SOLO afecta navegación global */
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+}
+
+/* SOLO listas generales (no rompe nada) */
+ul {
+    list-style: none;
+    padding: 0;
+}
