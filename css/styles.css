@@ -1,32 +1,107 @@
 /* ============================
-   ESTILOS GENERALES (SEGUROS)
+   RESET BÁSICO
    ============================ */
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-
-    /* Fondo degradado morado */
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-
-    color: white;
-    text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* SOLO afecta navegación global */
+/* ============================
+   FONDO GLOBAL (DEGRADADO)
+   ============================ */
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+
+  /* degradado morado-azul */
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ============================
+   CONTENEDOR GENERAL (AUTO)
+   Aplica aunque NO usen .panel
+   ============================ */
+body > * {
+  background: white;
+  width: 90%;
+  max-width: 700px;
+  padding: 30px;
+  border-radius: 20px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+
+  text-align: center;
+}
+
+/* ============================
+   PANEL (SI LO USAS)
+   ============================ */
+.panel {
+  background: white;
+  width: 100%;
+}
+
+/* ============================
+   TÍTULOS
+   ============================ */
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* ============================
+   MENÚ
+   ============================ */
 nav {
-    margin: 20px 0;
+  margin-bottom: 20px;
 }
 
 nav a {
-    text-decoration: none;
-    color: white;
-    margin: 0 10px;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 15px;
+
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+
+  transition: 0.3s;
 }
 
-/* SOLO listas generales (no rompe nada) */
+nav a:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* ============================
+   LISTAS
+   ============================ */
 ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background: #f1f1f1;
+  margin: 10px auto;
+  padding: 10px;
+  width: 80%;
+  border-radius: 10px;
+  color: #333;
+}
+
+/* ============================
+   TEXTO
+   ============================ */
+p {
+  color: #555;
+  margin-top: 10px;
 }

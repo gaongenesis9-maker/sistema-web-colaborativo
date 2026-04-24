@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Productos</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<h1>Productos</h1>
+
+<ul id="lista"></ul>
+
+<script src="../js/productoServicio.js"></script>
+<script>
+    const lista = document.getElementById("lista");
+    obtenerProductos().forEach(p => {
+        lista.innerHTML += `<li>${p.nombre}</li>`;
+    });
+</script>
+
+</body>
+</html>
